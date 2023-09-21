@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import useOnClickOutsideRef from "../hooks/useOnClickOutsideRef";
+import useOnClickOutsideRef from "../../../hooks/useOnClickOutsideRef";
 
-import { IconComponents } from "../utils/iconMapper";
+import { IconComponents } from "../../../utils/iconMapper";
 
 export default function MenuItem({ module, onChangeSubMenuItems }) {
   const [subMenuShown, setSubMenuShown] = useState(false);

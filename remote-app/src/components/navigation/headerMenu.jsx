@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import MenuItem from "./menuItem";
-import SubMenuItem from "./subMenuItem";
+import MenuItem from "./menu/menuItem";
+import SubMenuItem from "./menu/subMenuItem";
 
-import { navigationData } from "../data/navigationData";
+import { navigationData } from "../../data/navigationData";
 
-import useOnClickOutsideRef from "../hooks/useOnClickOutsideRef";
+import useOnClickOutsideRef from "../../hooks/useOnClickOutsideRef";
 
 export default function HeaderMenu() {
   const [subMenuItems, setSubMenuItems] = useState(null);

@@ -1,21 +1,25 @@
 import { useState } from "react";
-import ArrowDownIcon from "../assets/icons/arrowDownIcon";
-import Logo from "../assets/icons/logo";
-import NotificationIcon from "../assets/icons/notificationIcon";
-import UserProfileIcon from "../assets/icons/userProfileIcon";
-import Dropdown from "./dropdown";
-import SubModule from "./subModule";
 
-import useOnClickOutsideRef from "../hooks/useOnClickOutsideRef";
-import { navigationData } from "../data/navigationData";
+import Dropdown from "./dropdown";
+import SubModule from "./menu/subModule";
+
+import Logo from "../../assets/icons/logo";
+import ArrowDownIcon from "../../assets/icons/arrowDownIcon";
+import NotificationIcon from "../../assets/icons/notificationIcon";
+import UserProfileIcon from "../../assets/icons/userProfileIcon";
+
+import useOnClickOutsideRef from "../../hooks/useOnClickOutsideRef";
+
+import { navigationData } from "../../data/navigationData";
 
 export default function Header() {
   const [dropdownShown, setDropdownShown] = useState(false);
   const [mobileMenuShown, setMobileMenuShown] = useState(false);
+
   const dropdownRef = useOnClickOutsideRef(() => setDropdownShown(false));
 
   function handleDropdownClick() {
-    setDropdownShown(true);
+    setDropdownShown((prev) => !prev);
   }
 
   return (
@@ -61,7 +65,7 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* For mobile devices */}
       <div
         className={`${
           mobileMenuShown ? "flex" : "hidden"
@@ -94,7 +98,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      {/* // */}
+      {/* */}
     </header>
   );
 }
