@@ -1,12 +1,13 @@
 import { useState } from "react";
-import ArrowDownIcon from "./assets/icons/arrowDownIcon";
-import Logo from "./assets/icons/logo";
-import NotificationIcon from "./assets/icons/notificationIcon";
-import UserProfileIcon from "./assets/icons/userProfileIcon";
+import ArrowDownIcon from "../assets/icons/arrowDownIcon";
+import Logo from "../assets/icons/logo";
+import NotificationIcon from "../assets/icons/notificationIcon";
+import UserProfileIcon from "../assets/icons/userProfileIcon";
 import Dropdown from "./dropdown";
-import useOnClickOutsideRef from "./hooks/useOnClickOutsideRef";
-import { navigationData } from "./data/navigationData";
-import SubModule from "./SubModule";
+import SubModule from "./subModule";
+
+import useOnClickOutsideRef from "../hooks/useOnClickOutsideRef";
+import { navigationData } from "../data/navigationData";
 
 export default function Header() {
   const [dropdownShown, setDropdownShown] = useState(false);
