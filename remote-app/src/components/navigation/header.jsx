@@ -69,7 +69,7 @@ export default function Header() {
       <div
         className={`${
           mobileMenuShown ? "flex" : "hidden"
-        } md:hidden w-3/5 flex-col justify-between border-e`}
+        } md:hidden absolute w-3/5 flex-col justify-between border right-0 top-[75px]`}
       >
         <div className="px-4 py-1">
           <ul className="mt-6 space-y-1">
@@ -79,10 +79,10 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="sticky inset-x-0 bottom-0 border-y border-gray-100">
+        <div className="sticky inset-x-0 bottom-0 border border-gray-100 bg-white">
           <a
             href="#"
-            className="flex items-center gap-4 bg-white p-4 px-8 hover:bg-gray-50"
+            className="flex items-center gap-4 p-4 px-8 hover:bg-gray-50"
           >
             <div className="flex items-center justify-center gap-4">
               <div>
