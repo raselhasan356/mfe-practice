@@ -10,9 +10,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {
-        "./RemoteNavBar": "./src/NavBar",
-        "./RemoteLoginForm": "./src/LoginForm",
-        "./remoteUtilityFunctions": "./src/utils/functions.js",
+        "./RemoteNavbar": "./src/components/navigation/navbar",
       },
       shared: ["react", "react-dom", "react-router-dom"],
     }),

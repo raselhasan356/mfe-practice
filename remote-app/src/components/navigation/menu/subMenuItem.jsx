@@ -16,7 +16,7 @@ export default function SubMenuItem({ section }) {
             </svg>
           </span>
         </button>
-        <ul className="bg-white border top-11 max-h-[15rem] overflow-y-scroll rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-[8rem]">
+        <ul className="bg-white border top-11 max-h-[15rem] overflow-y-scroll-auto overflow-y-auto rounded-sm transform scale-0 group-hover:scale-100 absolute transition duration-150 ease-in-out origin-top min-w-[8rem]">
           {section.Screens.map((screen) => {
             return (
               <li
