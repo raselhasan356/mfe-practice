@@ -8,14 +8,14 @@ import App from "./app";
 
 import "./index.css";
 
-import { StoreProvider } from "webpackHost/store";
+// import { StoreProvider } from "webpackHost/store";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <StoreProvider>
-        <App />
-      </StoreProvider>
+      {/* <StoreProvider> */}
+      <App />
+      {/* </StoreProvider> */}
       <Toaster position="top-right" />
     </BrowserRouter>
   </React.StrictMode>

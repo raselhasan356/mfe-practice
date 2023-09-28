@@ -1,16 +1,16 @@
-import Todo from "../todo";
+// import Todo from "../todo";
 import Header from "./header";
 import HeaderMenu from "./headerMenu";
 
-import { store } from "webpackHost/store";
+// import { store } from "webpackHost/store";
 
 export const Navbar = () => {
-  console.log(store);
+  //console.log(store);
   return (
     <>
       <Header />
       <HeaderMenu />
-      <Todo />
+      {/* <Todo /> */}
     </>
   );
 };

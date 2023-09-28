@@ -9,11 +9,11 @@ export default defineConfig({
       name: "remoteApp",
       filename: "remoteEntry.js",
       remotes: {
-        webpackHost: {
-          external: `http://192.168.9.101:5000/remoteEntry.js`,
-          format: "var",
-          from: "webpack",
-        },
+        // webpackHost: {
+        //   external: `http://192.168.9.101:5000/remoteEntry.js`,
+        //   format: "var",
+        //   from: "webpack",
+        // },
       },
       exposes: {
         "./RemoteNavbar": "./src/components/navigation/navbar",
